@@ -19,3 +19,24 @@ Features:
 
 Status:
 Prototype under development.
++------------------+
+                 |   Arduino UNO    |
+                 +------------------+
+                          |
+                    CNC Shield V3
+                          |
+        ---------------------------------
+        |               |               |
+      X-Axis         Y-Axis         Servo
+      A4988          A4988          SG90
+        |               |             |
+     NEMA17         NEMA17       Signal -> D11
+   Stepper X      Stepper Y      VCC -> 5V
+                                   GND -> GND
+
+Power Supply (12V SMPS)
+        |
+        +------> CNC Shield V3
+                     |
+             Powers A4988 Drivers
+             and Stepper Motors
